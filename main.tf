@@ -10,6 +10,10 @@ terraform {
   }
 }
 
+provider "aws" {
+    region = "us-east-2"
+}
+
 #create an S3 bucket
 resource "aws_s3_bucket" "terraform-bucket" {
   bucket = "terraform-bucket-19863008"
